@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spider-Man</title>
 </head>
 <body>
     <h1><%= oneSpider.name %></h1>
     <img class="show-image" src="<%= oneSpider.img %>" alt="spiderMan image" />
     <ul class="spiderMan-types">
-        <% for (let i=0; i < oneSpider.type.length; i++) { %>
-            <li><%= oneSpider.type[i] %></li>
+        <% for (let i=0; i < oneSpider.movies.length; i++) { %>
+            <li><%= oneSpider.movies[i] %></li>
         <% } %>
     </ul>
    
