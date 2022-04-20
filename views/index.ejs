@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/public/main.css">
     <title>Spider-Man Movies</title>
 </head>
 <body>
     <h1>Spider-Man Movies</h1>
-        <% for (let i = 0; i < SpiderManData.Search.length; i++)  { %>
-            <% const movie = SpiderManData.Search[i] %>
+        <% for (let i = 0; i < SpiderManData.length; i++)  { %>
+            <% const movie = SpiderManData[i] %>
             <h2><%= movie.Title %></h2>
             <br>
             <img src = "<%= movie.Poster %>" alt = "<%= movie.Title %>" />
